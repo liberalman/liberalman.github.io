@@ -43,7 +43,3 @@ include: [_pages]
 version: 0.8
 
 gems: [jekyll-paginate, jekyll-seo-tag]
-
-# 开启分页功能
-paginate: 5
-paginate_path: "page:num"
