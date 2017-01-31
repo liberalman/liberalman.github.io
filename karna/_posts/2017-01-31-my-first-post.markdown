@@ -57,3 +57,46 @@ $ sudo gem install rdiscount
 [plain] view plain copy 在CODE上查看代码片派生到我的代码片
 $ jekyll server  
 之后会有提示，访问http://0.0.0.0:4000就可以啦。
+
+
+
+ruby编译scss出现invalid GBK错误
+问题描述
+在windows7上面，通过ruby编译scss时，发现编译报错，内容如下：
+Conversion error: Jekyll::Converters::Scss encountered an error while converting 'css/main.scss':
+                         Invalid GBK character "\xE3" on line 315
+虽然给出来了报错的原因，但是尼玛，main.scss总共也没有315行啊，而且并没有中文注释什么的。查找一番之后才发现，这里编译器报错的位置不一定是scss中的位置，也有可能是你在scss中引用了其他库中含有中文字符。我在scss中引入了字体文件，文件中包含了中文字符
+
+解决办法
+1.在ruby的安装目录下找到engine.rb文件，目录格式如D:\ruby\Ruby21\lib\ruby\gems\2.1.0\gems\sass-3.4.15\lib\sass在文件中添加一行Encoding.default_external = Encoding.find('utf-8')
+在require语句结束处，如：
+
+require 'sass/media'
+require 'sass/supports'
+module Sass   
+Encoding.default_external = Encoding.find('utf-8')
+
+2.在scss文件的头部加一行@charset "utf-8"
+
+
+如何让jekyll服务可以在局域网中访问
+jekyll搭建自己的博客非常方便，通过jekyll serve -w可以持续监控文件的修改情况、编译成HTML并通过HTTP服务给本机（localhost）进行访问。
+
+Server address: http://127.0.0.1:4000/
+
+Server running... press ctrl-c to stop.
+由于jekyll将地址绑定到了127.0.0.1，导致局域网的其它机器并不能访问它的服务。但实际上只要改变运行jekyll的参数就可以了。
+
+$ jekyll serve -w --host=0.0.0.0
+
+Server address: http://0.0.0.0:4000/
+
+Server running... press ctrl-c to stop.
+这样就可以通过该机器的IP地址访问网站了。
+
+
+jekyll serve --watch -w --host=192.168.0.4
+
+
+
+http://blog.csdn.net/u014015972/article/details/50497254
