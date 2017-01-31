@@ -5,7 +5,7 @@ url: http://liberalman.github.io/
 permalink: ':title/'
 
 markdown: kramdown
-baseurl: "/liberalman.github.io"
+baseurl: "/karna"
 
 
 sass:
