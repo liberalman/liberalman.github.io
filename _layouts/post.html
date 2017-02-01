@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="page-container">
+    <!-- page.img 和 page.banner 取其一就行 -->
    {% if page.img %}
     <img class="featured-img" src={{ "/images-hq/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
     {% endif %}
