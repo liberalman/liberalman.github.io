@@ -23,6 +23,23 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
+
+
+#####　使用脚本来快速新建文章
+
+说来偶然，在我搜索技术文章的时候，偶然发现了一个博客，觉得这个博客的风格很合我的口味，便顺便找到了作者在github上托管的仓库，将整个仓库clone下来后，将内容换成了自己的文章，便成了我现在这个博客所使用的模板。
+
+这里说一下，使用jekyll时，在工程目录下的"_post"文件夹里放置的就是个人所写的博客内容了。这里可以说是最主要的，因为你的写作成果就集中在这里。如果你看中了别人的博客样式，只需要找到对应的工程，拷过来以后，将"_post"里的文章替换成自己的即可。
+
+在我将这个工程拷过来以后，我发现了以前在Jekyll-Bootstrap中一个非常好用的新建文章的命令无法使用了，该命令如下：
+
+rake post title="titlename"
+执行该命令后，将会在“_post”的文件夹下生成形式为“YYYY-MM-dd-titlename.md”的文件，并且会提供好一些附加信息。其中，titlename就是命令中的title后引号中的值。
+
+经过和之前的工程对比后我发现，应该是缺少了一个名为Rakefile的脚本文件的原因，于是我把这个文件拷贝到当前的工程中，这个命令就又可以使用了。之后我对这个文件做了一些修改，使之产生的文件更适合现在的模板。
+
+
+
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: http://jekyllrb.com/docs/home

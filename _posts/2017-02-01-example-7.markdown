@@ -108,12 +108,61 @@ YAML Front Matter和模板变量
 上面的title就是自定义的内容，你也可以设置其他的内容，在文章中可以通过{ { page.title }}这样的形式调用。
 模板变量，我们之前也涉及了不少了，还有其他需要的变量，可以参考官方的文档：https://github.com/mojombo/jekyll/wiki/template-data
 
+#####　使用脚本来快速新建文章
+
+说来偶然，在我搜索技术文章的时候，偶然发现了一个博客，觉得这个博客的风格很合我的口味，便顺便找到了作者在github上托管的仓库，将整个仓库clone下来后，将内容换成了自己的文章，便成了我现在这个博客所使用的模板。
+
+这里说一下，使用jekyll时，在工程目录下的"_post"文件夹里放置的就是个人所写的博客内容了。这里可以说是最主要的，因为你的写作成果就集中在这里。如果你看中了别人的博客样式，只需要找到对应的工程，拷过来以后，将"_post"里的文章替换成自己的即可。
+
+在我将这个工程拷过来以后，我发现了以前在Jekyll-Bootstrap中一个非常好用的新建文章的命令无法使用了，该命令如下：
+
+```
+rake post title="titlename"
+```
+
+执行该命令后，将会在“_post”的文件夹下生成形式为“YYYY-MM-dd-titlename.md”的文件，并且会提供好一些附加信息。其中，titlename就是命令中的title后引号中的值。
+
+经过和之前的工程对比后我发现，应该是缺少了一个名为Rakefile的脚本文件的原因，于是我把这个文件拷贝到当前的工程中，这个命令就又可以使用了。之后我对这个文件做了一些修改，使之产生的文件更适合现在的模板。
+
 
 ##### 代码高亮插件
 
 如果写技术博客，代码高亮少不了，有两个可选插件DlHightLight代码高亮组件和Google Code Prettify。DLHightLight支持的语言相对较少一些，有js、css、xml和html，Google的高亮插件基本上任何语言都支持，也可以自定义语言，也支持自动识别，也有行号的特别支持。
 Google的高亮插件使用也比较方便，只需要在
 的标签上加入prettyprint即可。所以我选择了Google Code Prettify。
+
+
+**使用pygments代码高亮**
+
+jekyll默认的代码样式确实不怎么样，但是jekyll支持语法高亮工具 Pygments 。Pygments支持100多种语言的高亮显示，安装网上教程有很多。
+
+
+
+安装pygments，这个工具是python写的，所以用python安装如下
+
+```
+easy_install pip
+pip install pygments
+```
+
+这里说明一点，就是要使用Pygments，你需要在jekyll中添加相应的css文件，如果你使用本博的这个模板，那么你可以省略接下来这个步骤了。使用命令：
+
+```
+pygmentize -S native -f html > pygments.css
+```
+
+可以在当前路径下生成一个名为pygments.css的文件，使用的是“native”的Pygments样式，这在命令中都有体现，接着就可以将这个css文件放到jekyll工程中，并在模板中加入该样式即可。
+
+Pygments代码高亮语法使用介绍： 点击这里
+
+具体例子效果如下：
+
+1 public class HelloWorld {
+2     public static void main(String args[]) {
+3       System.out.println("Hello World!");
+4     }
+5 }
+注意： 要使用pygments语法高亮，需要在_config.yml配置文件中配置，见上面的第一点。
 
 
 ### 使用Disqus管理评论
