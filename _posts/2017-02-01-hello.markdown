@@ -4,7 +4,7 @@ title:  "他不是老实，他只是没机会放荡"
 description: 刘墉说过：“越是没身份、没地位、没财产、没退路的男人，你愈要小心。”大多数老实人只是没资本才老实，姑娘们擦亮眼睛。 
 date:   2017-02-01 10:51:47 +0530
 categories: jekyll update
-img: http://pic.jiaren.org/wp-pic/2016/10/b46.jpg
+banner: "http://pic.jiaren.org/wp-pic/2016/10/b46.jpg"
 categories: [one, two]
 color: BF360C
 author: 摆渡人
