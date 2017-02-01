@@ -126,7 +126,7 @@ paginate_path: "page:num"
 <!-- 分页代码 -->
 {% endif %}
 
-{% highlight ruby %}
+{% endhighlight %}
 
 我们需要一个跳转到上一页的按钮，这个按钮在第一页不需要显示，通过paginator的previous_page属性来判断是否是第一个页面，使用paginator的previous_page_path来输出上一页的路径，注意在前面添加baseurl，并进行一些必要的字符替换：
 
@@ -136,7 +136,7 @@ paginate_path: "page:num"
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"上一页</a>
 {% endif %}
 
-{% highlight ruby %}
+{% endhighlight %}
 
 接着是生成所有页面的按钮，并使当前页按钮无效化，遍历所有页面，使用paginator的page属性来确定当前页，如果是当前页，则按钮无效，否则使用{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}来将:num替换成当前页面的数字生成页面路径：
 
@@ -152,7 +152,7 @@ paginate_path: "page:num"
     {% endif %}
 {% endfor %}
 
-{% highlight ruby %}
+{% endhighlight %}
 
 最后生成一个下一页的按钮，在最后一页不显示，和上一页按钮类似，通过paginator的next_page_path来确定是否还有下一页：
 
@@ -162,7 +162,7 @@ paginate_path: "page:num"
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
 {% endif %}
 
-{% highlight ruby %}
+{% endhighlight %}
 
 这样一个完整的分页导航功能就做好了，效果就和博客主页上的分页效果是一样的
 
