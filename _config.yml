@@ -3,13 +3,9 @@ title: Liberalman
 desctiption: Liberalman is a freedom blog.
 url: http://liberalman.github.io/
 permalink: ':title/'
-# 博客的名字
-name: Liberty's blog
 
 # markdown的渲染引擎
 markdown: redcarpet
-kramdown:
-  input: GFM
 baseurl: ""
 
 
@@ -32,7 +28,7 @@ compress_html:
 highlight: rouge
 
 
-# Tracker
+# Tracker 站点统计
 analytics: UA-83979019-1
 
 # Comments
