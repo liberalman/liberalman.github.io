@@ -39,7 +39,7 @@ author: 摆渡人
 
 被告知具体地点后，小蕾火速叫上了自己的发小沙子哥一起前往。一路上小蕾忐忑不安，她完全不知道是什么情况，她从来不会想到一直这么老实安分的人也会这样。
 
-03
+# 03
 
 到了地方，小蕾让沙子哥进去打探情况。一会儿，男朋友那群人各自领着一个女人进了隔壁的酒店。
 
@@ -61,7 +61,7 @@ author: 摆渡人
  
 小蕾扇了他一巴掌，从此分道扬镳。
 
-04
+# 04
 
 太多人都和小蕾一样，以为老实是一个人的本性，在以后漫长的生活中这个特质不会褪色。
 
@@ -79,7 +79,7 @@ author: 摆渡人
 
 往往这种男人一旦得势，你曾经认为的“老实可靠”，将是证明你瞎了眼最狠的证据。
 
-05
+# 05
 
 我们看古装剧，读古代小说和历史，太多关于老实的穷书生考取功名后抛弃了曾经山盟海誓的结发妻子的故事。
 
@@ -107,11 +107,11 @@ author: 摆渡人
 
 当有一天你所拥有的不足以交换他的老实，那么随之而来的，就是你最想不到的那一面。
 
+
 作者简介：摆渡人，简书签约作者，悦读专栏作者，日照人。微博@我是摆渡人，个人公众号： baiduren66。新书《愿所有姑娘都可以嫁给爱情》正在热售。原题：《老实人浪起来，你我都招架不住》
 
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+转自 [他不是老实，他只是没机会放荡 - 悦读时光].
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[他不是老实，他只是没机会放荡 - 悦读时光]: http://www.ydsg.com/html/2016/yuedu_1102/648.html
+
