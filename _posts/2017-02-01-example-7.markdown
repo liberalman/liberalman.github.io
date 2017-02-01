@@ -105,11 +105,11 @@ paginate_path: "page:num"
 ##### 使用分页
 只是开启了分页还没有用，我们需要确实使用到首页之中，在首页(/index.html)中添加如下代码：
 
-```
+{% highlight ruby %}
 {% for post in paginator.posts %}
     <a href="{{ post.url }}">{{ post.title }}</a>
 {% endfor %}
-```
+{% endhighlight %}
 
 这样，jekyll就会根据paginator来进行分页了，被分出来多少页，就会有多少个页面生成。排1-5的文章就在/index.html中了，而排6-10的文章则在/page2/index.html中，依次类推
 
