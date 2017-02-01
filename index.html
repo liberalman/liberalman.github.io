@@ -6,7 +6,7 @@ layout: default
 
     {% for post in site.posts %}
     <div class="box" style="background-color:#{{post.color}}">
-        <!-- page.img 和 page.banner 取其一就行 -->
+        <!-- page.img 和 page.banner 取其一就行，img是取本地路径，banne是取远程地址 -->
        {% if post.img %}
           <img class="feat-image" src={{ "/images/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
        {% endif %}
