@@ -29,10 +29,13 @@ yum install ruby-devel
 ```
 
 2. 去掉官方ruby源，改用国内淘宝源，速度快
-gem sources --remove http://rubygems.org/
-gem sources -a https://ruby.taobao.org
+
+	gem sources --remove http://rubygems.org/
+    gem sources -a https://ruby.taobao.org
+
 4. 安装jekyll
-5. {% highlight ruby %}
+5. 
+{% highlight ruby %}
 gem install jekyll
 {% endhighlight %}
 
@@ -56,6 +59,10 @@ date发布文章的时间。
 categories将文章设置成不同的属性。系统在生成页面时会根据多个属性值来生成文章地址。以上设置会生http://.../jekyll/update/...格式的文章链接。
 
 tags标签，一篇文章可以设置多个标签，使用空格分割。
+
+        *layout: post*指的是博文格式安装_layouts文件夹下的post.html指定的格式来显示。 
+        *categories: [Tools]*指定博文分类。 
+        *tags: [jekyll, github, git, markdown]*指定博文标签。
 
 
 .Jekyll是支持图片和其它资源文件的，但本人在此强烈建议所有的文件资源全都通过外链的方式解决，毕竟GitHub主要还是用来管理源代码不适合存放资源文件。如果只是需要简单的图床的话直接使用weibo的私人相册的功能即可就是管理起来不太方便。当然其实最好还是使用像某牛云存储之类的云存储服务，访问量不大的话免费账户基本能满足要求了，管理资源文件也很方便（感觉有点做广告的嫌疑-_-!）
