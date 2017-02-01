@@ -4,8 +4,10 @@ layout: default
 
 <div class="page-container">
    {% if page.img %}
-    <!-- <img class="featured-img" src={{ "/images-hq/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}"> -->
-        <img class="featured-img" src="{{page.banner}}" alt="{{page.title}}">
+    <img class="featured-img" src={{ "/images-hq/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+    {% endif %}
+    {% if page.banner %}
+    <img class="featured-img" src="{{page.banner}}" alt="{{page.title}}">
     {% endif %}
     <div class="content">
     <article>
