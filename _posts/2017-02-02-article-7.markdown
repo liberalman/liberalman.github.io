@@ -8,7 +8,7 @@ date:   2017-02-02 22:06:47 +0530
 categories: jekyll update
 banner: "http://read.html5.qq.com/image?src=forum&q=5&r=0&imgflag=7&imageUrl=http://mmbiz.qpic.cn/mmbiz_jpg/0WvIQqWiafkmfa5Z4hppTkGiaial6biaU5kTMjfkhpBTWFn7QEWjqoZKlMqkHot63PoeTZ7QLLD1VMRLOezuRDFxuA/0?wx_fmt=jpeg"
 categories: [one, two]
-color: 
+color: 1906D2
 author: Liberalman
 ---
 
