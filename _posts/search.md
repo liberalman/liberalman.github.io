@@ -45,3 +45,6 @@ permalink: /search/
     });
   });
 </script>
+
+
+<script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
