@@ -14,7 +14,7 @@ layout: default
           <img class="feat-image" src="{{post.banner}}" alt="{{post.title}}">
        {% endif %}
           <div class="container">
-            <h4>{{post.title}}</h4>
+            <h3>{{post.title}}</h3>
             <p>{{post.description}}</p>
              <div class="action">{{ post.date | date: '%B %d, %Y' }}<a href="{{post.url | prepend: site.baseurl}}"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></div> 
         </div>   
