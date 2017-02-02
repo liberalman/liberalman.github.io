@@ -42,3 +42,7 @@ include: [_pages]
 version: 0.8
 
 gems: [jekyll-paginate, jekyll-seo-tag]
+
+# Search plugin
+lunr_search:
+excludes: [atom.xml]

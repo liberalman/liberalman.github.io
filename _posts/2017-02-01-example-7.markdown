@@ -352,6 +352,11 @@ paginate_path: "page:num"
 jekyll的分页总的来说还算给力，基本的功能可以完成。但是有一些缺陷，就是category，tag的分类分页无法实现，必须通过插件的方式来做。但是github不允许三方插件，所以只能通过一些其他的方式实现了
 
 
+### 搜索
+使用 Lunr.js基于Web网页端的静态HTML页面搜索引擎 进行静态网站的搜索！
+
+
+
 ### 问题
 #### ruby编译scss出现invalid GBK错误
 问题描述
