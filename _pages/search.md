@@ -2,7 +2,12 @@
 layout: page
 permalink: /search/
 ---
-
+<script src="/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/date.format.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/URI.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
 
 <div id="search">
   <form action="/search" method="get">
