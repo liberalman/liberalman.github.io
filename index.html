@@ -5,6 +5,7 @@ layout: default
 <div id="grid" data-columns class="cols">
 
     {% for post in site.posts %}
+    <a href="{{post.url | prepend: site.baseurl}}">
     <div class="box" style="background-color:#{{post.color}}">
         <!-- page.img 和 page.banner 取其一就行，img是取本地路径，banne是取远程地址 -->
        {% if post.img %}
@@ -19,6 +20,7 @@ layout: default
              <div class="action">{{ post.date | date: '%B %d, %Y' }}<a href="{{post.url | prepend: site.baseurl}}"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></div> 
         </div>   
     </div>
+    </a>
    {% endfor %}
 
 </div>
