@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "健身"
+description: 健身日志，新的积累。 
+date:   2017-04-30 14:00:47 +0530
+categories: jekyll update
+banner: "http://pic.jiaren.org/wp-pic/2016/10/b46.jpg"
+categories: [one, two]
+color: BF360C
+author: Liberalman
+---
+# 心得体会
+先做器械，再做有氧。做反了影响肌肉生长。
+
+硬拉这种运动最后再做，伤腰，而且做的时候腰不要反弓，微直就行，反弓会损坏脊柱。
+
+
