@@ -32,3 +32,10 @@ UDP有接受缓冲区，但是没有发送缓冲区，即时发送。
 TCP之深入浅出send和recv
 
 http://blog.csdn.net/nodeathphoenix/article/details/30060461
+
+
+网卡开机启动
+
+vim /etc/sysconfig/network-scripts/ifcfg-eth0
+
+将ONBOOT=no改为yes
