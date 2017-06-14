@@ -1,3 +1,5 @@
+Markdown语法：https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#7-%E6%B5%81%E7%A8%8B%E5%9B%BE
+
 Demo: [http://webjeda.com/karna](http://webjeda.com/karna)
 
 # Installation: 
